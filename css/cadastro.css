@@ -1,93 +1,92 @@
-* {
+*{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    margin:0;
+    padding:0 ; 
+} 
 
-body {
+body{
     font-family: Arial, sans-serif;
-    background-color: #eef2f5;
+    background-color: rgb(90, 14, 24);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    max-width: 100vh;
 }
 .card{
-    background-color: white;
-    padding: 30px;
+    background-color: rgb(202, 189, 212);
+    padding: 30 px;
     border-radius: 20px;
-    width: 380px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-shadow: 0 4px 8px rgb(163, 183, 197);
 }
 
-.card h2 {
+.card h2{
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: rgb(30, 30, 32);
 }
-.grupo-campo {
+.grupo-campo{
     margin-bottom: 15px;
 }
-.grupo-campo label {
+.grupo-campo{
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
-    color: #555;
+    color: rgb(170, 123, 144);
     font-weight: bold;
 }
 .grupo-campo input{
     width: 100%;
-    padding: 10px; 
-    border: 2px solid #9d9c9c;
+    padding: 10px 14px;
+    border: 2px solid rgb(124, 155, 177);
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 14px; 
     transition: border-color 0.3s, background-color 0.3s;
 }
 
-.grupo-campo input:focus {
-    border-color: #476abc;
-    background-color: #f0f8ff;
-    outline: none;
+.grupo-campo input:focus{
+    border-color: rgb(90, 90, 141);
+    background-color: rgb(211, 150, 201);
+    outline: nome;
 }
-.grupo-campo input.campo-valido {
-    border-color: #28a745;
+.grupo-campo input.campo-valido{
+    border-color: rgb(37, 58, 51);
 }
 /* Requisitos da senha */
-.lista-requisitos {
-    margin-top: 10px;
+.lista-requisitos{
+    margin-top:10px;
     font-size: 12px;
-    list-style:none;
+    list-style: none;
 }
-.requisito {
-    color: #888;
+.requisito{
+    color: rgb(44, 41, 41);
     margin-bottom: 5px;
     transition: color 0.3s;
 }
-
-.requisito::before {
+.requisito::before{
     content: "\274c";
-    color: #888;
+    color: black;
 }
 
-.requisito.valido::before {
-    content: "\2714  "; /* "\2705" ou "\2714") */
-    color: #28a745;
+.requisito.valido::before{
+    content: "\2714"; /*"\2705" ou "\2714") */
+    color: rgb(105, 150, 60);
 }
 
 .campo-valido{
-    border-color: #28a745;
-    background-color: #f4fff6;
+    border-color: rgb(133, 235, 92);
+    background-color: aliceblue;
 }
 
-.btn {
+.btn{
     width: 100%;
     padding: 12px;
-    background-color: #0056b3;
-    color: white;
+    color: rgb(114, 68, 7);
     font-size: 16px;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-} 
+    
+}
