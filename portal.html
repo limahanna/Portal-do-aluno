@@ -12,7 +12,7 @@
             <span> &#x1F393 Portal do Aluno</span>
         </div>
         <div class="usuario-info">
-            <button id="btn-tema" class="btn-tema" aria-label="alternar tema"> &#x1F313 </button>
+            <button id="btn-tema" class="btn-tema" aria-label="Alternar tema"> &#x1f313</button>
             <span id="nome-usuario"> Carregando ...</span>
             <button id="btn-logout" class="btn-sair"> Sair </button>
         </div>
@@ -22,7 +22,6 @@
 
         <section class="boas-vindas">
             <h1 id="titulo-boas-vindas" >Bem Vindo(a)!</h1>
-            <p id="curso-aluno"></p>
             <p>
                 Confira o resumo das suas atividades acadêmicas nesta semana.
             </p>
@@ -31,10 +30,25 @@
         <div class="grid-cards">
             <article class="card-info">
                 <h3> &#x1F4DA Minhas Disciplinas </h3>
-                <ul>
-                    <li> Desenvolvimento Web </li>
-                    <li> Banco de Dados </li>
-                    <li> História </li>
+                <ul id="lista-disciplinas" class="lista-disciplinas">
+                    <li class="item-disciplina" data-disciplina="Desenvolvimento Web">
+                        <div class="header-disciplina">
+                            <span class="nome-disciplina">Desenvolvimento Web</span>
+                        </div>
+                        <div class="detalhes-notas"></div>
+                    </li>
+                    <li class="item-disciplina" data-disciplina="Banco de Dados"> 
+                        <div class="header-disciplina">
+                            <span class="nome-disciplina">Banco de Dados</span>
+                        </div>
+                        <div class="detalhes-notas"></div>
+                    </li>
+                    <li class="item-disciplina" data-disciplina="Algoritmos e Linguagem de Programação">
+                        <div class="header-disciplina">
+                            <span class="nome-disciplina">Algoritmos e Linguagem de Programação</span>
+                        </div> 
+                        <div class="detalhes-notas"></div>
+                    </li>
                 </ul>
             </article>
 
@@ -42,7 +56,6 @@
                 <h3> &#x1F4CA Frequência </h3>
                 <p class="destaque-verde"> 95% de presença </p>
                 <small>Parabéns, você está dentro do limite recomendado!</small>
-
             </article>
 
             <article class="card-info">
